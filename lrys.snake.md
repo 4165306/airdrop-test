@@ -350,7 +350,7 @@ This signature confirms I own this wallet and completed this game.`;
         console.log('✅ 签名成功:', signature);
         
         // 5. 提交参数
-        console.log('📤 提交高分...');
+        console.log('📤 提交高分(服务器会很卡，耐心等待)...');
         const res = await fetch("/api/game/complete", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -383,5 +383,5 @@ This signature confirms I own this wallet and completed this game.`;
 }
 
 // example
-submitHighScore(sessionId, 'snake', 4320)
+submitHighScore(sessionId, 'snake', 4320, '钱包地址')
 ```
