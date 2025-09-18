@@ -381,7 +381,8 @@ This signature confirms I own this wallet and completed this game.`;
         throw error;
     }
 }
-
+// 增加debugger断点游戏
+debugger;
 // example
 submitHighScore(sessionId, 'snake', 4320, '钱包地址')
 ```
